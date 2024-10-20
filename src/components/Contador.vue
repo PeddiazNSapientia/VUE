@@ -1,24 +1,26 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <h1>HOLA MUNDO</h1>   
+  <h1>Hola mundo</h1>   
   <p>{{ contador }}</p>
   <button @click="incrementar">Incrementar</button>
   <button @click="decrementar">Decrementar</button>
+
+
 </template>
   
   
   
   
-  <script setup>
-  import {ref} from 'vue'
-  const contador = ref(0)   
-  const incrementar = () => {
-    contador.value++
-  }
-  const decrementar = () => {
-    contador.value--
-  }
-  
-  </script>
+<script setup>
+import {ref} from 'vue';
+const contador = ref(0);   
+const incrementar = () => {
+  contador.value++;
+}
+const decrementar = () => {
+  contador.value--;
+}
+</script>
   
   
   
